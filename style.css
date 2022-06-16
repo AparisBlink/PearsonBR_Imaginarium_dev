@@ -593,7 +593,7 @@
     font-weight: 400;
   }
   #actividad .bck-flipbox .bck-flipbox-face.front {
-    background-color: var(--ColorHtml_5);
+    background-color: var(--ColorHtml_3);
     box-shadow: 0px 4px 6px #989898;
     color: #ffffff;
   }

@@ -394,6 +394,18 @@
 
 
 /* CKEDITOR */
+/*Enlaces*/
+.body_clase:not(.edit)  #actividad .slide-wrapper a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: bold;
+}
+  
+.body_clase:not(.edit)  #actividad .slide-wrapper a:hover,
+.body_clase:not(.edit)  #actividad .slide-wrapper a:active,
+.body_clase:not(.edit)  #actividad .slide-wrapper a:focus {
+    color: rgb(var(--ColorHtml_1));
+}
 /* TITULO DE LA SLIDE */
 #actividad .content .header {
     border: none;

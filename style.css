@@ -655,6 +655,50 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: bold;
 }
 
+/*Popup*/
+    /* Content: Popover */
+    
+.close-popover {
+    font-size: var(--MainText);
+    color: rgb(var(--error-color));
+    background-color: rgb(var(--main-color));
+    color: white;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    border-bottom-left-radius: 5px;
+    width: 3rem;
+    height: 3rem;
+}    
+#actividad .popover-container .popover-title:before {
+        display: none;
+}    
+#actividad .popover-container .popover-title:before,
+#actividad .popover-container .popover-title .popover-title-text {
+    color: inherit;
+}
+#actividad .popover-container .popover-title .popover-title-text {
+    font-weight: bold;
+    margin: 0;
+}    
+#actividad .popover-container .popover-content {
+    color: var(--TextColor);
+    font-size: var(--MainFontSize);
+    padding: 1.0rem 1.5rem;
+}    
+/* Content: popover template*/
+.body_clase:not(.edit) > .popover-template{
+    background-color: rgb(255,255,255);
+}
+.body_clase.edit .popover-title,
+.popover-template .popover-title {
+color: rgb(var(--ColorHtml_1));
+font-size: var(--MainFontSize);
+line-height: var(--MainLineHeight);
+display: flex;
+padding: 1.0rem 4.5rem 1.0rem 1.5rem;
+}
+
 /*--TABS--*/
 body:not(.edit) .bck-tabs-box {
     background-color: transparent;

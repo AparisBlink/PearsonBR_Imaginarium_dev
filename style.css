@@ -517,6 +517,58 @@
     margin-top: .5em;
 }
 
+/*Desplegables */
+#actividad .bck-dropdown {
+    width: 100%;
+    margin-bottom: var(--MainMargin);
+    background-color: transparent;
+}
+
+#actividad .bck-dropdown .bck-dropdown-titulo {
+color: var(--ColorHtml_1);
+cursor: pointer;
+font-size: calc(var(--MainFontSize) * 1.2);
+font-weight: bold;
+padding: 0;
+}
+
+#actividad .bck-dropdown .bck-dropdown-button {
+position: relative;
+cursor: pointer;
+display: flex;
+align-items: center;
+flex-direction: row-reverse;
+justify-content: space-between;
+padding: 1.0rem 1.5rem;
+background-color: transparent;
+color: var(--ColorHtml_1);
+}
+
+#actividad .bck-dropdown .bck-dropdown-icon {
+position: relative;
+width: auto;
+height: auto;
+}
+
+#actividad .bck-dropdown .bck-dropdown-icon>.fa {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+color: inherit;
+border: none;
+padding: 0;
+font-size: var(--MainFontSize);
+}
+
+#actividad .bck-dropdown .bck-dropdown-content {
+width: 100%;
+background-color: var(--ColorHtml_1);
+color: #ffffff;
+border: 0;
+max-height: none;
+padding: 1rem 1.5rem;
+}
+
 
 @media screen and (max-width: 1099px) {
     .body_clase .content-wrapper {

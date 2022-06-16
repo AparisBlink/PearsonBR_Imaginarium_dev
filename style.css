@@ -1,7 +1,21 @@
-/*
 
+:root {
+    --ColorNavBar_1: #9bacd5;
+    --ColorNavBar_2: #6b7ec1;
 
-General */
+    --TextColor: #4b4b4b;
+
+    --ColorHtml_1: #41a6dc;
+    --ColorHtml_2: #e45355;
+    --ColorHtml_3: #6984bd;
+    --ColorHtml_4: #9bacd5;
+    --ColorHtml_5: #37538f;
+
+    --MainFontSize: 1.8 rem
+    /*--MainLineHeight:*/
+}
+
+/*General */
 	.body_clase:not(.edit) .content-wrapper {
 		padding-top: 100px;
 		padding-bottom: 0px;
@@ -47,18 +61,6 @@ General */
 	#indice .unit-content .header .number
 	 {
 		visibility: hidden;
-	}
-
-
-
-
-	#actividad .texto_curso {
-		font-size: 1.9rem;
-	}
-
-	#actividad .texto_curso li,
-	#actividad .workspace ul li li {
-		margin-bottom: 10px;
 	}
 
 	#actividad .class_slide {
@@ -139,11 +141,22 @@ General */
 	}
 /**/
 
+/*-----------------------------*/
+/*---------- NAVBAR ----------*/
+/*-----------------------------*/
+
 /* Navbar (Breadcums) */
+
+    /*---- Se puede eliminar la regla al integrar el código*/
+	.navbar-content:before {
+        display: none;
+	}
+    /*---*/
+
 	.PearsonBR_Imaginarium_dev-navbar {
 		position: fixed;
 		top: 44px;
-		background-color: #CFCFCF;
+		background-color: var(--ColorNavBar_1);
 		width: 100%;
 		left: 0;
 		z-index: 100;
@@ -161,13 +174,13 @@ General */
 	}
 
 	#top-navigator.show_left:before {
-		color: #FF3F21;
-        background: linear-gradient(to right, #CFCFCF, transparent);
+		color: var(--ColorNavBar_2);
+        background: linear-gradient(to right, var(--ColorNavBar_1), transparent);
     }
 
     #top-navigator.show_right:after {
-    	color: #FF3F21;
-        background: linear-gradient(to left, #CFCFCF, transparent);
+    	color: var(--ColorNavBar_2);
+        background: linear-gradient(to left, var(--ColorNavBar_1), transparent);
     }
 
 	#top-navigator .slider-indicators li {
@@ -180,17 +193,6 @@ General */
 		padding-left: 0;
 		padding-right: 0;
 		text-align: center;
-	}
-
-	.navbar-content:before {
-		content: " ";
-		background-image: url(logo.png);
-		height: 40px;
-		background-repeat: no-repeat;
-		width: 100px;
-		margin-left: -50px;
-		margin-top: 7px;
-		float: left;
 	}
 
 	.PearsonBR_Imaginarium_dev-navbar .slider-indicators {
@@ -213,7 +215,7 @@ General */
 		border-radius: 5px;
 		border: none;
 		background-color: white;
-		color: #FF3F21;
+		color: var(--ColorNavBar_2);
 		vertical-align: middle;
 		margin: 0px 5px;
 		text-indent: 0px;
@@ -234,7 +236,7 @@ General */
 	.slider-indicators li.active,
 	.PearsonBR_Imaginarium_dev-navbar li:hover,
 	.PearsonBR_Imaginarium_dev-navbar .dropdown button:hover {
-		background-color: #FF3F21;
+		background-color: var(--ColorNavBar_2);
 		color: #FFF;
 	}
 
@@ -247,8 +249,6 @@ General */
 		width: auto;
 		padding: 0px 10px;
 	}*/
-
-
 
 	.PearsonBR_Imaginarium_dev-navbar .dropdown {
 		display: block;
@@ -276,12 +276,12 @@ General */
 	}
 
 	.PearsonBR_Imaginarium_dev-navbar .dropdown li a {
-		color: #FF3F21;
+		color: var(--ColorNavBar_2);
 		font-weight: bold;
 	}
 
 	.PearsonBR_Imaginarium_dev-navbar .dropdown .caret {
-		border-color: #FF3F21 transparent transparent transparent;
+		border-color: var(--ColorNavBar_2) transparent transparent transparent;
 	}
 
 	.PearsonBR_Imaginarium_dev-navbar .dropdown:hover .caret {
@@ -376,6 +376,16 @@ General */
 /* CKEDITOR */
 
 
+
+#actividad .texto_curso {
+    font-size: 1.9rem;
+}
+
+#actividad .texto_curso li,
+#actividad .workspace ul li li {
+    margin-bottom: 10px;
+}
+
 /* TITULO DE LA SLIDE */
 #actividad .content .header {
     border: none;
@@ -443,18 +453,6 @@ General */
 		margin-top: -2px;
 	}
 
-	.bck-img.right,
-	img[style~="float:right"] {
-		margin-left: 20px;
-		float: right;
-	}
-
-	.bck-img.left,
-	img[style~="float:left"] {
-		margin-right: 20px;
-		float: left;
-	}
-
 	.bck-box {
 		padding: 10px 20px;
 		border: 10px 0px;
@@ -509,25 +507,9 @@ General */
         padding: 0px 20px;
     }
 
-    .bck-img.right, img[style~="float:right"] {
-        max-width: 50%
-    }
-
-    .bck-img.left, img[style~="float:left"] {
-        max-width: 50%
-    }
-
 }
 
 @media screen and (max-width: 480px) {
-
-    .bck-img.right, img[style~="float:right"] {
-        width: 100%;
-    }
-
-    .bck-img.left, img[style~="float:left"] {
-        width: 100%;
-    }
 
     #actividad .carousel-inner .item-container {
 		padding: 40px 20px 90px;

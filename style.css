@@ -11,8 +11,12 @@
     --ColorHtml_4: #9bacd5;
     --ColorHtml_5: #37538f;
 
-    --MainFontSize: 1.8 rem
-    /*--MainLineHeight:*/
+    --MainFontSize: 1.8 rem;
+    --MainLineHeight: 1.6;
+    --MainFontFamily: Arial, "Source Sans Pro", sans-serif;
+
+    --SlidePadding: 5.0rem;
+    --MainMargin: 2.0rem;
 }
 
 /*General */
@@ -63,22 +67,6 @@
 		visibility: hidden;
 	}
 
-	#actividad .class_slide {
-    	padding: 40px 97px 0px;
-	}
-
-	#actividad .class_slide:last-of-type {
-	    padding-bottom: 100px;
-	}
-
-	#actividad .slide-concatenate .class_slide {
-	    padding-bottom: 20px;
-	}
-
-	#actividad .slide-concatenate:last-of-type .class_slide {
-	    padding-bottom: 100px;
-	}
-
 	.slide_main input {
 		color: #555;
 		background-color: #fff;
@@ -122,14 +110,6 @@
 	.slide_main input.solucion {
 		border-color: #00BDFF;
 		background: #B6ECFF;
-	}
-
-	#actividad .class_slide {
-		padding-bottom: 20px;
-	}
-
-	#actividad .slide-concatenate:last-child .class_slide:last-of-type {
-		/*padding-bottom: 100px;*/
 	}
 
 	table {
@@ -261,6 +241,10 @@
 		max-height: 300px;
 		overflow-y: auto;
 	}
+    .dropdown-menu>li>a:hover,
+     .dropdown-menu>li>a:focus {
+        transition: none;
+    }
 
 	.PearsonBR_Imaginarium_dev-navbar .dropdown button {
 		border: none;
@@ -373,19 +357,53 @@
 	}
 /**/
 
-/* CKEDITOR */
+/*----------------------------------------------*/
+/*----------- GENERALES SLIDES HTML -------------*/
+/*----------------------------------------------*/
 
-
-
-#actividad .texto_curso {
-    font-size: 1.9rem;
+/*General para que lean las variables*/
+.body_clase #actividad .texto_curso {
+    font-family: var(--MainFontFamily);
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight) !important;
 }
+.body_clase #actividad .workspace {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+}
+
+/* Padding de la slide */
+#actividad .class_slide {
+    padding: 40px var(--SlidePadding) 0px;
+}
+#actividad .class_slide:last-of-type {
+    padding-bottom: 100px;
+}
+#actividad .slide-concatenate .class_slide {
+    padding-bottom: 20px;
+}
+#actividad .slide-concatenate:last-of-type .class_slide {
+    padding-bottom: 100px;
+}
+#actividad .slide-concatenate:last-child .class_slide:last-of-type {
+    /*padding-bottom: 100px;*/
+}
+
+
+
+
+
+
 
 #actividad .texto_curso li,
 #actividad .workspace ul li li {
     margin-bottom: 10px;
 }
 
+
+
+
+/* CKEDITOR */
 /* TITULO DE LA SLIDE */
 #actividad .content .header {
     border: none;
@@ -403,34 +421,41 @@
 		margin-bottom: 10px;
 	}
 
-	#actividad .content .bck-img.right,
-	#actividad .content img[style~="float:right"] {
-		margin-left: 20px;
-		float: right;
-	}
+/*-- Titulos --*/
+#actividad h4,
+ #actividad h3{
+    margin: 0 0 2.0rem;
+}
+ .bck-title-1 {
+    font-size: calc(var(--MainText) * 2);
+    color: var(--ColorHtml_1);
+    font-weight: bold;
+}
+.bck-title-2 {
+    font-size: calc(var(--MainText) * 1.6);
+    color: var(--ColorHtml_2);
+    font-weight: bold;
+}
+.bck-title-3 {
+  font-size: calc(var(--MainText) * 1.3);
+  color: var(--ColorHtml_3);
+  font-weight: bold;
+}
+.bck-title-4 {
+    font-size: calc(var(--MainText) * 1.15);
+    color: var(--ColorHtml_3);
+    font-weight: bold;
+}
+ .bck-title-5 {
+    font-size: calc(var(--MainText) * 1.15);
+    color: var(--TextColor);
+    font-weight: bold;
+}
 
-	#actividad .content .bck-img.left,
-	#actividad .content img[style~="float:left"] {
-		margin-right: 20px;
-		float: left;
-	}
 
-	.bck-title1 {
-		font-size: 2.7rem;
-		font-weight: bold;
-	}
 
-	.bck-title2 {
-		color: #8C8A89;
-		font-size: 2.4rem;
-		font-weight: bold;
-	}
 
-	.bck-title3 {
-		color: #A2218F;
-		font-size: 2.4rem;
-		font-weight: bold;
-	}
+
 
 	.content .bck-ol {
 		list-style-type: none;

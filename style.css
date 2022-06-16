@@ -621,7 +621,7 @@
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) tbody td {
     color: var(--ColorHtml_5);
     padding: 1.0rem 2.0rem;
-    border: solid 2px rgb(var(--ColorHtml_5));
+    border: solid 2px var(--ColorHtml_5);
 }
 /*Estilos tabla y celda*/
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) tbody .bck-td-1 {

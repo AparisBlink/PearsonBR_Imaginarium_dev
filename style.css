@@ -12,7 +12,7 @@
     --ColorHtml_5: #37538f;
 
     --MainFontSize: 1.8rem;
-    --MainLineHeight: 1.6;
+    --MainLineHeight: 1.4;
     --MainFontFamily: Arial, "Source Sans Pro", sans-serif;
 
     --SlidePadding: 5.0rem;
@@ -362,12 +362,15 @@
 /*----------------------------------------------*/
 
 /*General para que lean las variables*/
-.body_clase #actividad .texto_curso {
+#actividad .texto_curso {
     font-family: var(--MainFontFamily);
     font-size: var(--MainFontSize);
     line-height: var(--MainLineHeight) !important;
 }
-.body_clase #actividad .workspace {
+#actividad .texto_curso p{
+    line-height: var(--MainLineHeight) !important;
+}
+#actividad .workspace {
     font-size: var(--MainFontSize);
     line-height: var(--MainLineHeight);
 }

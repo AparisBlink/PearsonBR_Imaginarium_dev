@@ -452,6 +452,31 @@
     font-weight: bold;
 }
 
+/* CAJAS */
+.bck-box {
+    padding: 1.5rem;
+    margin-bottom: var(--MainMargin);
+    border: 1px solid var(--ColorHtml_1);
+}
+.bck-box.center {
+    margin: 0 auto;
+}
+.bck-box.left {
+    float: left;
+    margin-right: 25px;
+}
+.bck-box.right {
+    float: right;
+    margin-left: 25px;
+}
+.bck-box > .bck-title {
+    font-size: calc(var(--MainFontSize) * 1.2);
+    font-weight: bold;
+}
+.bck-box-1 {
+    background-color: var(--ColorHtml_1);
+    color: #ffffff;
+}
 
 
 
@@ -478,25 +503,9 @@
 		margin-top: -2px;
 	}
 
-	.bck-box {
-		padding: 10px 20px;
-		border: 10px 0px;
-		word-break: break-word;
-	}
 
-	.bck-box.center {
-		margin: 0 auto;
-	}
 
-	.bck-box.left {
-		float: left;
-		margin-right: 25px;
-	}
 
-	.bck-box.right {
-		float: right;
-		margin-left: 25px;
-	}
 /**/
 
 @media screen and (max-width: 1099px) {

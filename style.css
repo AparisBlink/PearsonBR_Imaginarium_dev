@@ -409,9 +409,10 @@
 	}
 
 /*-- Titulos --*/
-#actividad h4,
- #actividad h3{
-    margin: 0 0 2.0rem;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0 0 2.0rem;
+    font-family: var(--MainFontFamily);
+    line-height: var(--MainLineHeight);
 }
  .bck-title-1 {
     font-size: calc(var(--MainFontSize) * 2);

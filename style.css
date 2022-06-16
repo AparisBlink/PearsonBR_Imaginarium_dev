@@ -364,11 +364,11 @@
 /*General para que lean las variables*/
 .body_clase #actividad .texto_curso {
     font-family: var(--MainFontFamily);
-    font-size: var(--MainText);
+    font-size: var(--MainFontSize);
     line-height: var(--MainLineHeight) !important;
 }
 .body_clase #actividad .workspace {
-    font-size: var(--MainText);
+    font-size: var(--MainFontSize);
     line-height: var(--MainLineHeight);
 }
 
@@ -427,27 +427,27 @@
     margin: 0 0 2.0rem;
 }
  .bck-title-1 {
-    font-size: calc(var(--MainText) * 2);
+    font-size: calc(var(--MainFontSize) * 2);
     color: var(--ColorHtml_1);
     font-weight: bold;
 }
 .bck-title-2 {
-    font-size: calc(var(--MainText) * 1.6);
+    font-size: calc(var(--MainFontSize) * 1.6);
     color: var(--ColorHtml_2);
     font-weight: bold;
 }
 .bck-title-3 {
-  font-size: calc(var(--MainText) * 1.3);
+  font-size: calc(var(--MainFontSize) * 1.3);
   color: var(--ColorHtml_3);
   font-weight: bold;
 }
 .bck-title-4 {
-    font-size: calc(var(--MainText) * 1.15);
+    font-size: calc(var(--MainFontSize) * 1.15);
     color: var(--ColorHtml_3);
     font-weight: bold;
 }
  .bck-title-5 {
-    font-size: calc(var(--MainText) * 1.15);
+    font-size: calc(var(--MainFontSize) * 1.15);
     color: var(--TextColor);
     font-weight: bold;
 }

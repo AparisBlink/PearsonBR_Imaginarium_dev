@@ -477,10 +477,11 @@
 /*-- Listas ordenadas --*/
 .content .bck-ol {
     list-style-type: none;
+    padding: 0;
+    counter-reset: bck-li-counter;
 }
 .content .bck-ol li {
-    counter-increment: bck-li-counter 1;
-    counter-reset: bck-li-counter;
+    counter-increment: bck-li-counter;
     position: relative;
     margin-left: 2.0rem;  
 }
@@ -622,6 +623,7 @@
     color: var(--ColorHtml_5);
     padding: 1.0rem 2.0rem;
     border: solid 2px var(--ColorHtml_5);
+    text-align: center;
 }
 /*Estilos tabla y celda*/
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) tbody .bck-td-1 {

@@ -1,19 +1,19 @@
 (function (blink) {
 	'use strict';
 
-	var PublisherStyle = function () {
+	var PearsonBR_Imaginarium_devStyle = function () {
 			blink.theme.styles.basic.apply(this, arguments);
 		},
 		page = blink.currentPage;
 
-	PublisherStyle.prototype = {
+	PearsonBR_Imaginarium_devStyle.prototype = {
 		//BK-15873 añadimos el estilo basic como parent para la herencia de los estilos del CKEditor
 		parent: blink.theme.styles.basic.prototype,
-		bodyClassName: 'content_type_clase_publisher',
+		bodyClassName: 'content_type_clase_PearsonBR_Imaginarium_dev',
 		extraPlugins: ['image2'],
 		customColors: '8cc63f,2abb9c,c2615b,ff3f21,983220',
 		ckEditorStyles: {
-			name: 'publisher',
+			name: 'PearsonBR_Imaginarium_dev',
 			styles: [
 				{ name: ' Título 01', element: 'h3', attributes: { 'class': 'bck-title-1'} },
 				{ name: ' Título 02', element: 'h3', attributes: { 'class': 'bck-title-2'} },
@@ -109,7 +109,7 @@
 					'</div>';
 
 			$navbarBottom
-				.attr('class', 'publisher-navbar')
+				.attr('class', 'PearsonBR_Imaginarium_dev-navbar')
 				.wrapInner('<div class="navbar-content"></div>')
 				.find('ol')
 					.before(dropDown)
@@ -133,9 +133,9 @@
 		//BK-15873 Quitamos la funcion getEditorStyles para que la herede de basic
 	};
 
-	PublisherStyle.prototype = _.extend({}, new blink.theme.styles.basic(), PublisherStyle.prototype);
+	PearsonBR_Imaginarium_devStyle.prototype = _.extend({}, new blink.theme.styles.basic(), PearsonBR_Imaginarium_devStyle.prototype);
 
-	blink.theme.styles.publisher = PublisherStyle;
+	blink.theme.styles.PearsonBR_Imaginarium_dev = PearsonBR_Imaginarium_devStyle;
 
 })( blink );
 

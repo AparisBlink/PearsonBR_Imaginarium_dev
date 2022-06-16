@@ -390,19 +390,6 @@
 }
 
 
-
-
-
-
-
-#actividad .texto_curso li,
-#actividad .workspace ul li li {
-    margin-bottom: 10px;
-}
-
-
-
-
 /* CKEDITOR */
 /* TITULO DE LA SLIDE */
 #actividad .content .header {
@@ -460,6 +447,7 @@
 }
 .bck-box.center {
     margin: 0 auto;
+    margin-bottom: var(--MainMargin);
 }
 .bck-box.left {
     float: left;
@@ -472,41 +460,63 @@
 .bck-box > .bck-title {
     font-size: calc(var(--MainFontSize) * 1.2);
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 .bck-box-1 {
+    border: 0;
     background-color: var(--ColorHtml_1);
     color: #ffffff;
+    border-radius: 10px;
 }
 
+/*--- LISTAS -----*/
+#actividad .texto_curso li,
+#actividad .workspace ul li li {
+    margin-bottom: 1.0rem;
+}
+/*-- Listas ordenadas --*/
+.content .bck-ol {
+    list-style-type: none;
+}
+.content .bck-ol li {
+    counter-increment: bck-li-counter 1;
+    counter-reset: bck-li-counter;
+    position: relative;
+    margin-left: 2.0rem;  
+}
+.content .bck-ol li:before {
+    content: counter(bck-li-counter) ".";
+    position: absolute;
+    margin-left: 0; /*Se puede eliminar al integrar*/
+    font-family: var(--MainFontFamily); /*Se puede eliminar al integrar*/
+    text-align: right;
+    color: var(--ColorHtml_3);
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 0; /*Se puede eliminar al integrar*/
+    width: 6rem;
+    left: -6.5rem;
+}
 
+/*ListaS desordenadas */
+#actividad .texto_curso ul li,
+#actividad ul.bck-ul > li {
+    position: relative;
+    padding-left: 2rem;
+}
+#actividad .texto_curso ul li:before,
+    #actividad ul.bck-ul > li:before {
+    content: "";
+    background: var(--ColorHtml_3);
+    color: var(--ColorHtml_3);
+    text-align: center;
+    width: 0.5em;
+    height: 0.5em;
+    line-height: var(--MainLineHeight);
+    left: 0;
+    margin-top: .5em;
+}
 
-
-
-	.content .bck-ol {
-		list-style-type: none;
-	}
-
-	.content .bck-ol li {
-		counter-increment: bck-li-counter 1;
-		position: relative;
-	}
-
-	.content .bck-ol li:before {
-		content: counter(bck-li-counter);
-		position: absolute;
-		margin-left: -15px;
-		font-family: Arial;
-		text-align: right;
-		color: #A2218F;
-		font-weight: bold;
-		font-size: larger;
-		margin-top: -2px;
-	}
-
-
-
-
-/**/
 
 @media screen and (max-width: 1099px) {
     .body_clase .content-wrapper {

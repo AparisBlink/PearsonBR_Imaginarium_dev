@@ -1,8 +1,7 @@
-/* General */
-	.cke_contents  table {
-		margin-bottom: 10px;
-	}
+/*
 
+
+General */
 	.body_clase:not(.edit) .content-wrapper {
 		padding-top: 100px;
 		padding-bottom: 0px;
@@ -50,38 +49,8 @@
 		visibility: hidden;
 	}
 
-	#actividad .content .header {
-		border: none;
-	}
 
-	#actividad .content .header .title h3 {
-		font-size: 3.4rem;
-		margin-top: 0px;
-		font-weight: bold;
-		display: block;
-		margin-top: 35px;
-	}
 
-	#actividad .content .header .title h3 .competencias {
-		color: #dda0dd;
-	}
-
-	#actividad .content .header .title h3 .repaso {
-		color: #8CC63F;
-	}
-
-	#actividad .content .header .title h3 .repaso-trimestral {
-		display: block;
-		background: #00aee2; /* Old browsers */
-		background: -moz-linear-gradient(left,  #00aee2 0%, #c5ca2f 36%, #f5cb0d 58%, #f0629d 100%, #7db9e8 100%, #f0629d 101%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#00aee2), color-stop(36%,#c5ca2f), color-stop(58%,#f5cb0d), color-stop(100%,#f0629d), color-stop(100%,#7db9e8), color-stop(101%,#f0629d)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(left,  #00aee2 0%,#c5ca2f 36%,#f5cb0d 58%,#f0629d 100%,#7db9e8 100%,#f0629d 101%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(left,  #00aee2 0%,#c5ca2f 36%,#f5cb0d 58%,#f0629d 100%,#7db9e8 100%,#f0629d 101%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(left,  #00aee2 0%,#c5ca2f 36%,#f5cb0d 58%,#f0629d 100%,#7db9e8 100%,#f0629d 101%); /* IE10+ */
-		background: linear-gradient(to right,  #00aee2 0%,#c5ca2f 36%,#f5cb0d 58%,#f0629d 100%,#7db9e8 100%,#f0629d 101%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aee2', endColorstr='#f0629d',GradientType=1 ); /* IE6-9 */
-		color: #FFF;
-	}
 
 	#actividad .texto_curso {
 		font-size: 1.9rem;
@@ -171,7 +140,7 @@
 /**/
 
 /* Navbar (Breadcums) */
-	.publisher-navbar {
+	.PearsonBR_Imaginarium_dev-navbar {
 		position: fixed;
 		top: 44px;
 		background-color: #CFCFCF;
@@ -180,7 +149,7 @@
 		z-index: 100;
 	}
 
-	.is_app .publisher-navbar {
+	.is_app .PearsonBR_Imaginarium_dev-navbar {
 		position: sticky;
 		top: 0px;
 	}
@@ -205,7 +174,7 @@
 		text-indent: 0;
 	}
 
-	.publisher-navbar .navbar-content {
+	.PearsonBR_Imaginarium_dev-navbar .navbar-content {
 		max-width: 960px;
 		margin: 0 auto;
 		padding-left: 0;
@@ -224,7 +193,7 @@
 		float: left;
 	}
 
-	.publisher-navbar .slider-indicators {
+	.PearsonBR_Imaginarium_dev-navbar .slider-indicators {
 		padding: 3px 0px;
 		display: inline-block;
 		text-align: left;
@@ -239,8 +208,8 @@
 		padding-top: 10px;
 	}
 
-	.publisher-navbar .dropdown button,
-	.publisher-navbar li {
+	.PearsonBR_Imaginarium_dev-navbar .dropdown button,
+	.PearsonBR_Imaginarium_dev-navbar li {
 		border-radius: 5px;
 		border: none;
 		background-color: white;
@@ -263,13 +232,13 @@
 	}
 
 	.slider-indicators li.active,
-	.publisher-navbar li:hover,
-	.publisher-navbar .dropdown button:hover {
+	.PearsonBR_Imaginarium_dev-navbar li:hover,
+	.PearsonBR_Imaginarium_dev-navbar .dropdown button:hover {
 		background-color: #FF3F21;
 		color: #FFF;
 	}
 
-	.publisher-navbar .dropdown button {
+	.PearsonBR_Imaginarium_dev-navbar .dropdown button {
 		width: auto;
 		padding: 0px 10px;
 	}
@@ -281,7 +250,7 @@
 
 
 
-	.publisher-navbar .dropdown {
+	.PearsonBR_Imaginarium_dev-navbar .dropdown {
 		display: block;
 		float: left;
 		margin-top: 10px;
@@ -293,29 +262,29 @@
 		overflow-y: auto;
 	}
 
-	.publisher-navbar .dropdown button {
+	.PearsonBR_Imaginarium_dev-navbar .dropdown button {
 		border: none;
 	}
 
-	.publisher-navbar .dropdown button:focus {
+	.PearsonBR_Imaginarium_dev-navbar .dropdown button:focus {
 		outline: none;
 	}
 
-	.publisher-navbar .dropdown li {
+	.PearsonBR_Imaginarium_dev-navbar .dropdown li {
 		display: list-item;
 		width: auto;
 	}
 
-	.publisher-navbar .dropdown li a {
+	.PearsonBR_Imaginarium_dev-navbar .dropdown li a {
 		color: #FF3F21;
 		font-weight: bold;
 	}
 
-	.publisher-navbar .dropdown .caret {
+	.PearsonBR_Imaginarium_dev-navbar .dropdown .caret {
 		border-color: #FF3F21 transparent transparent transparent;
 	}
 
-	.publisher-navbar .dropdown:hover .caret {
+	.PearsonBR_Imaginarium_dev-navbar .dropdown:hover .caret {
 		border-color: #FFF transparent transparent transparent;
 	}
 /**/
@@ -406,6 +375,19 @@
 
 /* CKEDITOR */
 
+
+/* TITULO DE LA SLIDE */
+#actividad .content .header {
+    border: none;
+}
+#actividad .content .header .title h3 {
+    font-size: 3.4rem;
+    margin-top: 0px;
+    font-weight: bold;
+    display: block;
+    margin-top: 35px;
+}
+
 	#actividad .content img{
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -438,12 +420,6 @@
 		color: #A2218F;
 		font-size: 2.4rem;
 		font-weight: bold;
-	}
-
-	.bck-header {
-		font-size: 2.8rem;
-		font-weight: bold;
-		color: #F7941D;
 	}
 
 	.content .bck-ol {
@@ -561,9 +537,9 @@
 
 /* TMPUX STYLES */
 
-.tmpux.modo_revision .publisher-navbar, 
-.tmpux.modo-correccion .publisher-navbar,
-.tmpux.modo-deber .publisher-navbar{
+.tmpux.modo_revision .PearsonBR_Imaginarium_dev-navbar, 
+.tmpux.modo-correccion .PearsonBR_Imaginarium_dev-navbar,
+.tmpux.modo-deber .PearsonBR_Imaginarium_dev-navbar{
     top: 0px;
 }
 

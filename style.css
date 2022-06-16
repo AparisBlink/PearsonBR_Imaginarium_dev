@@ -592,7 +592,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /*Flipbox*/
-    
 #actividad .bck-flipbox {
     width: 100%;
     font-size: var(--MainFontSize);
@@ -651,7 +650,31 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) tbody .bck-td-1 {
     background-color: var(--ColorHtml_4);
     font-weight: bold;
-  }
+}
+
+/*--TABS--*/
+.bck-tabs-box {
+    background-color: transparent;
+    border: 0;
+}
+.bck-tabtitles {
+    background-color: var(--ColorHtml_4);
+    color: var(--ColorHtml_5);
+    border: 1px solid var(--ColorHtml_5);
+    border-radius: 10px 10px 0 0;
+    padding: 0.8rem 4.5rem;
+    border-bottom: 0;
+}
+.bck-tabtitles.bck-tabs-active,
+ .bck-tabtitles:hover {
+    background-color: var(--ColorHtml_3);
+    color: #ffffff;
+    font-weight: bold;
+}
+body:not(.edit) .bck-tabcontents .div-contents {
+    border: 1px solid var(--ColorHtml_5);
+    padding: 1.5rem;
+}
 
 
 @media screen and (max-width: 1099px) {

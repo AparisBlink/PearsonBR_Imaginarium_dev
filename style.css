@@ -370,6 +370,9 @@
 #actividad .texto_curso p{
     line-height: var(--MainLineHeight) !important;
 }
+#actividad .pregunta .texto_curso {
+	font-size: var(--MainFontSize);	
+}
 #actividad .workspace {
     font-size: var(--MainFontSize);
     line-height: var(--MainLineHeight);
@@ -405,6 +408,7 @@
 .body_clase:not(.edit)  #actividad .slide-wrapper a:focus {
     color: var(--ColorHtml_1);
 }
+
 /* TITULO DE LA SLIDE */
 #actividad .content .header {
     border: none;
@@ -763,6 +767,11 @@ display: flex;
 padding: 1.0rem 4.5rem 1.0rem 1.5rem;
 }
 
+/*Archivos adjuntos*/
+.bck-file-attach span {
+    vertical-align: middle;
+}
+
 /*--TABS--*/
 body:not(.edit) .bck-tabs-box {
     background-color: transparent;
@@ -786,6 +795,54 @@ body:not(.edit) .bck-tabcontents .div-contents {
     border: 1px solid var(--ColorHtml_5);
     padding: 1.5rem;
 }
+/*-----------------*/
+/*--------- ACTIVIDADES -----------*/
+/*---------- Botonera ----------------*/
+.book-content .btn{
+	border-radius: 5px;
+	font-weight: 700;
+}
+
+.book-content .btn[disabled] {
+	background-color: #41AF30 !important;
+	border: 2px solid #41AF30 !important;
+	color: #ffffff !important;
+}
+
+.book-content .btn-primary {
+	border: 2px solid #41AF30;
+	background-color: #ffffff;
+	color: #41AF30;
+}
+.book-content .btn-primary:hover,
+.book-content .btn-primary:focus,
+.book-content .btn-primary:active,
+.book-content .btn-primary.active,
+.book-content .open .dropdown-toggle .btn-primary {
+	border: 2px solid #41AF30;
+	background-color: #41AF30;
+	color: #ffffff;
+}
+.book-content .btn-solution {
+	border: 2px solid #00bdff;
+	background-color: #ffffff;
+	color: #00bdff;
+}
+.book-content .btn-solution:hover {
+	background-color: #00bdff;
+	color: #ffffff;
+}
+.book-content .btn-danger{
+	border: 2px solid #db3228;
+	background-color: #ffffff;
+	color: #db3228;
+}
+.book-content .btn-danger:hover {
+	background-color: #db3228;
+	color: #ffffff;
+}
+
+/*--------------------------------------*/
 
 
 @media screen and (max-width: 1099px) {

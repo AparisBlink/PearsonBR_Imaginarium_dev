@@ -12,7 +12,7 @@
     --ColorHtml_5: #37538f;
 
     --MainFontSize: 1.8rem;
-    --MainLineHeight: 1.4;
+    --MainLineHeight: 1.5;
     --MainFontFamily: Arial, "Source Sans Pro", sans-serif;
 
     --SlidePadding: 5.0rem;
@@ -798,50 +798,56 @@ body:not(.edit) .bck-tabcontents .div-contents {
 /*-----------------*/
 /*--------- ACTIVIDADES -----------*/
 /*---------- Botonera ----------------*/
-.book-content .btn{
+#actividad .btn{
 	border-radius: 5px;
 	font-weight: 700;
+	font-size: 1.6rem;
 }
-
-.book-content .btn[disabled] {
+#actividad .btn[disabled] {
 	background-color: #41AF30 !important;
 	border: 2px solid #41AF30 !important;
 	color: #ffffff !important;
 }
-
-.book-content .btn-primary {
+#actividad .btn-primary {
 	border: 2px solid #41AF30;
 	background-color: #ffffff;
 	color: #41AF30;
 }
-.book-content .btn-primary:hover,
-.book-content .btn-primary:focus,
-.book-content .btn-primary:active,
-.book-content .btn-primary.active,
-.book-content .open .dropdown-toggle .btn-primary {
+#actividad .btn-primary:hover,
+#actividad .btn-primary:focus,
+#actividad .btn-primary:active,
+#actividad .btn-primary.active,
+#actividad .open .dropdown-toggle .btn-primary {
 	border: 2px solid #41AF30;
 	background-color: #41AF30;
 	color: #ffffff;
 }
-.book-content .btn-solution {
+#actividad .btn-solution {
 	border: 2px solid #00bdff;
 	background-color: #ffffff;
 	color: #00bdff;
 }
-.book-content .btn-solution:hover {
+#actividad .btn-solution:hover {
 	background-color: #00bdff;
 	color: #ffffff;
 }
-.book-content .btn-danger{
+#actividad .btn-danger{
 	border: 2px solid #db3228;
 	background-color: #ffffff;
 	color: #db3228;
 }
-.book-content .btn-danger:hover {
+#actividad .btn-danger:hover {
 	background-color: #db3228;
 	color: #ffffff;
 }
-
+#actividad .content .review .attemps {
+    font-size: 1.6rem;
+}
+#actividad .content .review .attemps span {
+	border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 1.8rem;
+}
 /*--------------------------------------*/
 
 

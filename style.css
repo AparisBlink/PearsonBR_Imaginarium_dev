@@ -430,7 +430,7 @@
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin: 0 0 var(--MainMargin);
     font-family: var(--MainFontFamily);
-    line-height: var(--MainLineHeight);
+    line-height: 1.1;
 }
  .bck-title-1 {
     font-size: calc(var(--MainFontSize) * 2);

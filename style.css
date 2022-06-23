@@ -403,6 +403,14 @@
     color: inherit;
     text-decoration: underline;
 }
+
+/*Audio*/
+#actividad .player.audio,
+ #actividad .player.video,
+  #help-panel-content .player,
+   #remote-alert-modal-rich .player {
+    background-image: url(images/icone-audio-kinder.png);
+}
   
 .body_clase:not(.edit)  #actividad .slide-wrapper a:hover,
 .body_clase:not(.edit)  #actividad .slide-wrapper a:active,
@@ -419,8 +427,21 @@
     padding: 2rem var(--SlidePadding);
     color: white;
 }
+#actividad .content .header:before {
+	content: "";
+    background-image: url(images/icone-titulo-kinder.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    top: 0;
+    left: 17px;
+}
 #actividad .content .header .title {
     margin-bottom: 0;
+	margin-left: 20px;
 }
 #actividad .content .header .title h3 {
     font-size: 3.4rem;

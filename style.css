@@ -5,6 +5,7 @@
 
     --TextColor: #4b4b4b;
 
+	--ColorSlideTitle: #94CDCB;
     --ColorHtml_1: #41a6dc;
     --ColorHtml_2: #e45355;
     --ColorHtml_3: #6984bd;
@@ -380,7 +381,7 @@
 
 /* Padding de la slide */
 #actividad .class_slide {
-    padding: 40px var(--SlidePadding) 0px;
+    padding: 0 var(--SlidePadding) 0px;
 }
 #actividad .class_slide:last-of-type {
     padding-bottom: 100px;
@@ -411,14 +412,22 @@
 
 /* TITULO DE LA SLIDE */
 #actividad .content .header {
-    border: none;
+	border: none;
+    width: calc(100% + var(--SlidePadding) * 2);
+    margin-left: calc(-1 * var(--SlidePadding));
+    background-color: var(--ColorSlideTitle);
+    padding: 2rem var(--SlidePadding);
+    color: white;
+}
+#actividad .content .header .title {
+    margin-bottom: 0;
 }
 #actividad .content .header .title h3 {
     font-size: 3.4rem;
     margin-top: 0px;
     font-weight: bold;
     display: block;
-    margin-top: 35px;
+    margin-bottom: 0;
 }
 
 	#actividad .content img{

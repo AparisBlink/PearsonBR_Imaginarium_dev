@@ -849,6 +849,59 @@ body:not(.edit) .bck-tabcontents .div-contents {
     font-size: 1.8rem;
 }
 /*--------------------------------------*/
+/*Verdadero y falso y test*/
+/*Damos formatos a los checkbox*/
+.true-false .radio-option label.filter-label::before {
+    content: "";
+    background: none;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #CCCCCC;
+    border-radius: 3px;
+    line-height: 22px;
+}
+.true-false .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::before {
+    position: absolute;
+    border-color: rgb(var(--colorppal));
+    background-color: transparent;
+}
+.true-false .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::after {
+    position: absolute;
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: rgb(var(--colorppal));
+    font-size: 15px;
+    background: none;
+    left: 4px;
+    top: 0px;
+}
+.true-false .radio-option input.filter-radio[type="radio"]:checked + label.respuesta_ok.filter-label::before {
+    background-color: #74d320;
+    border-color: #74d320;
+}
+.true-false .radio-option input.filter-radio[type="radio"]:checked + label.respuesta_ok.filter-label::after {
+    color: #fff;
+}
+.true-false .radio-option input.filter-radio[type="radio"]:checked + label.respuesta_ko.filter-label::before {
+    background-color: #ef0c24;
+    border-color: #ef0c24;
+}
+.true-false .radio-option input.filter-radio[type="radio"]:checked + label.respuesta_ko.filter-label::after {
+    content: "\f00d";
+    color: #fff;
+    left: 6px;
+}
+.true-false .radio-option input.filter-radio[type="radio"]:checked + label.solucion.filter-label::before {
+	border-color: #00BDFF;
+	background-color: #00BDFF;
+}
+.true-false .radio-option input.filter-radio[type="radio"]:checked + label.solucion.filter-label::after {
+    display: none;
+}
+
+/*------------*/
+
 /*Marcar palabras*/
 #actividad .markwords-word {
     line-height: var(--MainLineHeight) !important;	

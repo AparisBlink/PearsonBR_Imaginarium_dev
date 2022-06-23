@@ -877,20 +877,20 @@ body:not(.edit) .bck-tabcontents .div-contents {
     display: inline-block;
     width: 24px;
     height: 24px;
-    border: 2px solid #CCCCCC;
+    border: 2px solid #D8D8D8;
     border-radius: 3px;
     line-height: 22px;
 }
 .true-false .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::before {
     position: absolute;
-    border-color: rgb(var(--colorppal));
-    background-color: transparent;
+    border-color: rgb(var(--ColorHtml_3));
+    background-color: rgb(var(--ColorHtml_3));
 }
 .true-false .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::after {
     position: absolute;
     content: "\f00c";
     font-family: "FontAwesome";
-    color: rgb(var(--colorppal));
+    color: #ffffff;
     font-size: 15px;
     background: none;
     left: 4px;

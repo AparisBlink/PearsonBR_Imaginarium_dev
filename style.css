@@ -797,6 +797,26 @@ body:not(.edit) .bck-tabcontents .div-contents {
 }
 /*-----------------*/
 /*--------- ACTIVIDADES -----------*/
+.true-false .checkbox-option label.filter-label {
+    font-size: var(--MainText);
+}
+.workspace.true-false .radio-option input.filter-radio[type="radio"]+label.filter-label {
+    font-size: var(--MainText);
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    padding-left: 30px;
+}
+#actividad .workspace.true-false .respuesta_ok {
+    border-bottom: 0;
+}
+#actividad .workspace.true-false .respuesta_ko {
+    border-bottom: 0;
+}
+#actividad .workspace.true-false .solucion {
+    border-bottom: 0;
+    color: var(--TextColor);
+}
 /*---------- Botonera ----------------*/
 #actividad .btn{
 	border-radius: 5px;

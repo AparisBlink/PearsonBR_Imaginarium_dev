@@ -883,8 +883,8 @@ body:not(.edit) .bck-tabcontents .div-contents {
 }
 .true-false .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::before {
     position: absolute;
-    border-color: rgb(var(--ColorHtml_3));
-    background-color: rgb(var(--ColorHtml_3));
+    border-color: var(--ColorHtml_3);
+    background-color: var(--ColorHtml_3);
 }
 .true-false .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::after {
     position: absolute;

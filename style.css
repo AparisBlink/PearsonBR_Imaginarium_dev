@@ -496,7 +496,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #ffffff;
     font-weight: bold;
 	padding: 0.5rem 1.5rem;
-	border-radius: 10px;
+	border-radius: 5px;
+	padding-left: 3.0rem;
 }
 .bck-title-6:before {
 	position: absolute;
@@ -505,6 +506,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	height: 40px;
 	background-image: url(images/titulo-especial-kinder_icono.png);
 	background-repeat: no-repeat;
+	top: 0;
+    left: -10px;
 }
 
 /*Estilos de párrafo*/

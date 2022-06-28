@@ -477,6 +477,10 @@
     padding: 2rem var(--SlidePadding);
     color: white;
 }
+#actividad .content .header.empty {
+    border-bottom: 0;
+    background: none;
+}
 #actividad .content .header:before {
 	content: "";
     background-image: url(images/icone-titulo-kinder.png);
@@ -488,6 +492,9 @@
     height: 100%;
     top: 0;
     left: 17px;
+}
+#actividad .content .header.empty:before {
+    display: none;
 }
 #actividad .content .header .title {
     margin-bottom: 0;
@@ -901,7 +908,8 @@ body:not(.edit) .bck-tabcontents .div-contents {
 .true-false .checkbox-option label.filter-label {
     font-size: var(--MainFontSize);
 }
-.workspace.true-false .radio-option input.filter-radio[type="radio"]+label.filter-label {
+.workspace.true-false .radio-option input.filter-radio[type="radio"]+label.filter-label,
+.workspace.test .radio-option input.filter-radio[type="radio"]+label.filter-label {
     font-size: var(--MainFontSize);
     display: flex;
     align-items: center;
@@ -1036,6 +1044,34 @@ body:not(.edit) .bck-tabcontents .div-contents {
 /*Reducimos padding del botón para que no se descuadren mucho las listas*/
 .btnaudiorecorder.btn-primary {
     padding: 2px 10px;
+}
+/*Test*/
+/*Verdadero y falso y test*/
+/*Damos formatos a los checkbox*/
+.test .radio-option label.filter-label::before {
+    content: "";
+    background: none;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #D8D8D8;
+    border-radius: 3px;
+    line-height: 22px;
+}
+.test .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::before {
+    position: absolute;
+    border-color: var(--ColorHtml_3);
+    background-color: var(--ColorHtml_3);
+}
+.test .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::after {
+    position: absolute;
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: #ffffff;
+    font-size: 15px;
+    background: none;
+    left: 4px;
+    top: 0px;
 }
 
 /*------*/

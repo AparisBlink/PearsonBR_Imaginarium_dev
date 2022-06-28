@@ -403,6 +403,11 @@
     color: inherit;
     text-decoration: underline;
 }
+.body_clase:not(.edit)  #actividad .slide-wrapper a:hover,
+.body_clase:not(.edit)  #actividad .slide-wrapper a:active,
+.body_clase:not(.edit)  #actividad .slide-wrapper a:focus {
+    color: var(--ColorHtml_1);
+}
 
 /*Audio*/
 #actividad .player.audio,
@@ -410,13 +415,50 @@
   #help-panel-content .player,
    #remote-alert-modal-rich .player {
     background-image: url(images/icone-audio-kinder.png);
+	background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    vertical-align: bottom;
 }
-  
-.body_clase:not(.edit)  #actividad .slide-wrapper a:hover,
-.body_clase:not(.edit)  #actividad .slide-wrapper a:active,
-.body_clase:not(.edit)  #actividad .slide-wrapper a:focus {
-    color: var(--ColorHtml_1);
+
+/*Archivo adjunto*/
+.bck-file-attach img {
+	display: none;
 }
+.bck-file-attach span {
+    display: block;
+    margin-bottom: var(--MainMargin);
+    max-width: 100%;
+}
+.bck-file-label, .bck-sub-label {
+    background: none;
+    max-width: none;
+    border: 2px solid var(--ColorHtml_3);
+    color: var(--ColorHtml_3);
+    margin-left: -3px;
+    margin-bottom: 0;
+    border-radius: 0;
+    position: relative;
+    padding: 5px 8px 5px 9px;
+    border-radius: 5px;
+}
+.bck-file-attach:hover .bck-file-label,
+ .bck-file-attach:active .bck-file-label,
+  .bck-file-attach:focus .bck-file-label {
+	border-color: transparent;
+	background-color: var(--ColorHtml_4);
+}
+.bck-file-attach .bck-file-label:before {
+    font-family: 'FontAwesome';
+    content: "\f15b";
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border: 0;
+    background: none;
+    margin-right: 5px;
+}
+
 
 /* TITULO DE LA SLIDE */
 #actividad .content .header {

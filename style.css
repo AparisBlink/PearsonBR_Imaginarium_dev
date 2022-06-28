@@ -647,17 +647,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .content .bck-ol li:before {
     content: counter(bck-li-counter) ".";
     position: absolute;
-    margin-left: 0; /*Se puede eliminar al integrar*/
+    margin-left: 0; 
     text-align: right;
     color: var(--ColorHtml_3);
     font-weight: bold;
     font-size: 1em;
-    margin-top: 0; /*Se puede eliminar al integrar*/
+    margin-top: 0; 
     width: 6rem;
     left: -6.5rem;
-}
-.content .bck-ol .bck-ol-1 li:before {
-    color: var(--ColorHtml_3);
 }
 
 /*ListaS desordenadas */
@@ -678,9 +675,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     left: 0;
     margin-top: .5em;
     margin-left: 0;
-}
-#actividad ul.bck-ul.bck-ul-1 > li:before {
-	color: var(--ColorHtml_3);
 }
 /*Desplegables */
 .bck-dropdown {
@@ -778,14 +772,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /*Generales tabla*/
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) {
     width: 100%;
-    border: solid 2px var(--ColorHtml_5);
+    border: 1px solid var(--ColorHtml_5);
     font-size: var(--MainFontSize);
     margin-bottom: 2.0rem;
 }
 #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) tbody td {
     color: var(--ColorHtml_5);
     padding: 1.0rem 2.0rem;
-    border: solid 2px var(--ColorHtml_5);
+    border: 1px solid var(--ColorHtml_5);
     text-align: center;
 }
 /*Estilos tabla y celda*/
@@ -902,6 +896,7 @@ body:not(.edit) .bck-tabs-box {
     border: 0;
 }
 .bck-tabtitles {
+	font-weight: bold;
     background-color: var(--ColorHtml_4);
     color: var(--ColorHtml_5);
     border: 1px solid var(--ColorHtml_5);
@@ -913,7 +908,6 @@ body:not(.edit) .bck-tabs-box {
  .bck-tabtitles:hover {
     background-color: var(--ColorHtml_3);
     color: #ffffff;
-    font-weight: bold;
 }
 body:not(.edit) .bck-tabcontents .div-contents {
     border: 1px solid var(--ColorHtml_5);
@@ -1157,6 +1151,55 @@ body:not(.edit) .bck-tabcontents .div-contents {
     height: 100%;
     top: 5px;
 }
+.coursetag_imaginarium_secondary .content .bck-ol li:before {
+    color: var(--ColorHtml_1);
+}
+
+.coursetag_imaginarium_secondary #actividad .texto_curso ul li:before,
+.coursetag_imaginarium_secondary #actividad ul.bck-ul > li:before {
+    background: var(--ColorHtml_1);
+    color: var(--ColorHtml_1);
+}
+.coursetag_imaginarium_secondary .bck-dropdown .bck-dropdown-titulo {
+    color: var(--ColorHtml_3);
+}
+.coursetag_imaginarium_secondary .bck-dropdown .bck-dropdown-button {
+    color: var(--ColorHtml_3);
+}
+.coursetag_imaginarium_secondary .bck-dropdown .bck-dropdown-icon>.fa {
+    background-color: var(--ColorHtml_3);
+}
+.coursetag_imaginarium_secondary .bck-dropdown .bck-dropdown-content {
+    background-color: var(--ColorHtml_3);
+}
+
+.coursetag_imaginarium_secondary #actividad .bck-flipbox .bck-flipbox-face.front {
+    background-color: var(--ColorHtml_2);
+}
+.coursetag_imaginarium_secondary #actividad .bck-flipbox .bck-flipbox-face.back {
+    color: #ffffff;
+    background-color: var(--ColorHtml_5);
+}
+
+.coursetag_imaginarium_secondary .bck-tabtitles {
+    background-color: var(--ColorHtml_2);
+    color: #ffffff;
+    border-color: var(--ColorHtml_5);
+}
+.coursetag_imaginarium_secondary .bck-tabtitles.bck-tabs-active,
+.coursetag_imaginarium_secondary .bck-tabtitles:hover {
+    background-color: var(--ColorHtml_5);
+    color: #ffffff;
+}
+body:not(.edit).coursetag_imaginarium_secondary .bck-tabcontents .div-contents {
+    border-color: var(--ColorHtml_5);
+}
+
+.coursetag_imaginarium_secondary #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) tbody .bck-td-1 {
+    background-color: var(--ColorHtml_5);
+	color: #ffffff;	
+}
+
 
 
 

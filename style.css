@@ -477,7 +477,7 @@
     padding: 2rem var(--SlidePadding);
     color: white;
 }
-.slide-concatenate #actividad .content .header.empty {
+#actividad .slide-concatenate .content .header.empty {
 	display: none;
 }
 #actividad .content .header.empty {

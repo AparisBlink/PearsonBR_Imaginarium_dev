@@ -555,8 +555,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	height: 40px;
 	background-image: url(images/titulo-especial-kinder_icono.png);
 	background-repeat: no-repeat;
-	top: 0;
-    left: -10px;
+	bottom: -10px;
+	left: -10px;
 }
 
 /*Estilos de párrafo*/
@@ -1067,6 +1067,7 @@ body:not(.edit) .bck-tabcontents .div-contents {
 }
 .coursetag_imaginarium_primary .bck-title-6:before {
 	background-image: url(images/titulo-especial-primary_icono.png);
+	background-size: 25px;
 }
 
 /*coursetag_imaginarium_secondary*/

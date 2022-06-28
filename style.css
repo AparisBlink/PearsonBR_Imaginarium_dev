@@ -382,7 +382,7 @@
 
 /* Padding de la slide */
 #actividad .class_slide {
-    padding: 0 var(--SlidePadding) 0px;
+    padding: 0 var(--SlidePadding) 50px;
 }
 #actividad .class_slide:last-of-type {
     padding-bottom: 100px;

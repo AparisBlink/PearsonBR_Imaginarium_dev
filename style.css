@@ -425,12 +425,16 @@
 .bck-file-attach img {
 	display: none;
 }
+.body_clase:not(.edit) #actividad .slide-wrapper a.bck-file-attach {
+    text-decoration: none;
+}
 .bck-file-attach span {
     display: block;
     margin-bottom: var(--MainMargin);
     max-width: 100%;
 }
-.bck-file-label, .bck-sub-label {
+.bck-file-label,
+ .bck-sub-label {
     background: none;
     max-width: none;
     border: 2px solid var(--ColorHtml_3);
@@ -446,7 +450,8 @@
  .bck-file-attach:active .bck-file-label,
   .bck-file-attach:focus .bck-file-label {
 	border-color: transparent;
-	background-color: var(--ColorHtml_4);
+	background-color: var(--ColorHtml_3);
+	color: #ffffff;
 }
 .bck-file-attach .bck-file-label:before {
     font-family: 'FontAwesome';
@@ -1048,6 +1053,13 @@ body:not(.edit) .bck-tabcontents .div-contents {
 .coursetag_imaginarium_primary #help-panel-content .player,
 .coursetag_imaginarium_primary #remote-alert-modal-rich .player {
     background-image: url(images/icone-audio-primary.png);
+}
+
+.coursetag_imaginarium_primary .bck-title-6 {
+    background-color: #008DD1;
+}
+.coursetag_imaginarium_primary .bck-title-6:before {
+	background-image: url(titulo-especial-primary_icono.png);
 }
 
 /*coursetag_imaginarium_secondary*/

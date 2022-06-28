@@ -905,6 +905,9 @@ body:not(.edit) .bck-tabcontents .div-contents {
 }
 /*-----------------*/
 /*--------- ACTIVIDADES -----------*/
+.workspace.frame {
+	padding: 0;
+}
 .true-false .checkbox-option label.filter-label {
     font-size: var(--MainFontSize);
 }

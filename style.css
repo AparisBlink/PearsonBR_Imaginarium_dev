@@ -1037,6 +1037,9 @@ body:not(.edit) .bck-tabcontents .div-contents {
 /*---- COURSETAGS ----*/
 /*coursetag_imaginarium_primary*/
 .coursetag_imaginarium_primary {
+	--ColorNavBar_1: #ab9bc4;
+    --ColorNavBar_2: #8b62a5;
+
 	--ColorSlideTitle: #0E4194;
     --ColorHtml_1: #54b2e3;
     --ColorHtml_2: #8960a2;
@@ -1065,6 +1068,9 @@ body:not(.edit) .bck-tabcontents .div-contents {
 
 /*coursetag_imaginarium_secondary*/
 .coursetag_imaginarium_secondary {
+	--ColorNavBar_1: #bfd0e7;
+    --ColorNavBar_2: #e85859;
+
 	--ColorSlideTitle: #E85859;
     --ColorHtml_1: #e55e5d;
     --ColorHtml_2: #6969aa;

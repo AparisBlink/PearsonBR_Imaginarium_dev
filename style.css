@@ -468,7 +468,7 @@
 
 
 /* TITULO DE LA SLIDE */
-#actividad .content .header {
+:not(.edit) #actividad .content .header {
 	position: relative;
 	border: none;
     width: calc(100% + var(--SlidePadding) * 2);
@@ -484,7 +484,7 @@
     border-bottom: 0;
     background: none;
 }
-#actividad .content .header:before {
+:not(.edit) #actividad .content .header:before {
 	content: "";
     background-image: url(images/icone-titulo-kinder.png);
     background-repeat: no-repeat;
@@ -510,7 +510,6 @@
     display: block;
     margin-bottom: 0;
 }
-
 	#actividad .content img{
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -1138,7 +1137,11 @@ body:not(.edit) .bck-tabcontents .div-contents {
     background-color: #0088CC;
 }
 .coursetag_imaginarium_secondary .bck-title-6:before {
-	background-image: url(images/titulo-especial-secondary-icone.png);
+    background-image: url(images/titulo-especial-secondary-icone.png);
+    left: 7px;
+    background-size: 14px;
+    height: 100%;
+    top: 5px;
 }
 
 

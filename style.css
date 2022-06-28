@@ -489,15 +489,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: bold;
 }
 .bck-title-6 {
-	display: block;
-	position: relative;
+    display: block;
+    position: relative;
     font-size: var(--MainFontSize);
-	background-color: #EC8153;
+    background-color: #EC8153;
     color: #ffffff;
     font-weight: bold;
-	padding: 0.5rem 1.5rem;
-	border-radius: 5px;
-	padding-left: 3.0rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    padding-left: 3rem;
 }
 .bck-title-6:before {
 	position: absolute;
@@ -876,22 +876,22 @@ body:not(.edit) .bck-tabcontents .div-contents {
 	font-size: 1.6rem;
 }
 #actividad .btn[disabled] {
-	background-color: #41AF30 !important;
-	border: 2px solid #41AF30 !important;
+	background-color: var(--ColorHtml_3) !important;
+	border: 2px solid var(--ColorHtml_3) !important;
 	color: #ffffff !important;
 }
 #actividad .btn-primary {
-	border: 2px solid #41AF30;
+	border: 2px solid var(--ColorHtml_3);
 	background-color: #ffffff;
-	color: #41AF30;
+	color: var(--ColorHtml_3);
 }
 #actividad .btn-primary:hover,
 #actividad .btn-primary:focus,
 #actividad .btn-primary:active,
 #actividad .btn-primary.active,
 #actividad .open .dropdown-toggle .btn-primary {
-	border: 2px solid #41AF30;
-	background-color: #41AF30;
+	border: 2px solid var(--ColorHtml_3);
+	background-color: var(--ColorHtml_3);
 	color: #ffffff;
 }
 #actividad .btn-solution {
@@ -904,12 +904,12 @@ body:not(.edit) .bck-tabcontents .div-contents {
 	color: #ffffff;
 }
 #actividad .btn-danger{
-	border: 2px solid #db3228;
+	border: 2px solid var(--ColorHtml_3);
 	background-color: #ffffff;
-	color: #db3228;
+	color: var(--ColorHtml_3);
 }
 #actividad .btn-danger:hover {
-	background-color: #db3228;
+	background-color: var(--ColorHtml_3);
 	color: #ffffff;
 }
 #actividad .content .review .attemps {
@@ -984,6 +984,28 @@ body:not(.edit) .bck-tabcontents .div-contents {
     padding: 2px 10px;
 }
 
+/*------*/
+
+/*-----------------------------*/
+/*---- COURSETAGS ----*/
+.coursetag_imaginarium_primary {
+	--ColorSlideTitle: #0E4194;
+    --ColorHtml_1: #54b2e3;
+    --ColorHtml_2: #8960a2;
+    --ColorHtml_3: #8960a2;
+    --ColorHtml_4: #ceabe4;
+    --ColorHtml_5: #582d72;	
+}
+
+.coursetag_imaginarium_secondary {
+	--ColorSlideTitle: #E85859;
+    --ColorHtml_1: #e55e5d;
+    --ColorHtml_2: #6969aa;
+    --ColorHtml_3: #5482be;
+    --ColorHtml_4: #6969aa;
+    --ColorHtml_5: #404092;	
+}
+
 
 @media screen and (max-width: 1099px) {
     .body_clase .content-wrapper {
@@ -1041,3 +1063,5 @@ body:not(.edit) .bck-tabcontents .div-contents {
 .tmpux.modo-deber #actividad .carousel-inner .item-container {
     margin: 86px auto 30px;
 }
+
+

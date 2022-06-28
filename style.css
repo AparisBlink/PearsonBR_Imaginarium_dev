@@ -1057,6 +1057,7 @@ body:not(.edit) .bck-tabcontents .div-contents {
 
 .coursetag_imaginarium_primary .bck-title-6 {
     background-color: #008DD1;
+	border-radius: 10px;
 }
 .coursetag_imaginarium_primary .bck-title-6:before {
 	background-image: url(titulo-especial-primary_icono.png);

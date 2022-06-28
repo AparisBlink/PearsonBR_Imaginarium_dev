@@ -1139,7 +1139,7 @@ body:not(.edit) .bck-tabcontents .div-contents {
 .coursetag_imaginarium_secondary #actividad .player.video,
 .coursetag_imaginarium_secondary #help-panel-content .player,
 .coursetag_imaginarium_secondary #remote-alert-modal-rich .player {
-    background-image: url(images/icone-audio-primary.png);
+    background-image: url(images/icone-audio-secondary.png);
 }
 .coursetag_imaginarium_secondary .bck-title-6 {
     background-color: #0088CC;
@@ -1151,10 +1151,10 @@ body:not(.edit) .bck-tabcontents .div-contents {
     height: 100%;
     top: 5px;
 }
+
 .coursetag_imaginarium_secondary .content .bck-ol li:before {
     color: var(--ColorHtml_1);
 }
-
 .coursetag_imaginarium_secondary #actividad .texto_curso ul li:before,
 .coursetag_imaginarium_secondary #actividad ul.bck-ul > li:before {
     background: var(--ColorHtml_1);

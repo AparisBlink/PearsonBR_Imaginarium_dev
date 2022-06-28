@@ -534,7 +534,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .bck-title-5 {
     font-size: calc(var(--MainFontSize) * 1.1);
-    color: var(--TextColor);
+    color: var(--ColorHtml_6);
     font-weight: bold;
 }
 .bck-title-6 {

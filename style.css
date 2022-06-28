@@ -3,7 +3,7 @@
     --ColorNavBar_1: #9bacd5;
     --ColorNavBar_2: #6b7ec1;
 
-    --TextColor: #4b4b4b;
+    --TextColor: #000000;
 
 	--ColorSlideTitle: #94CDCB;
     --ColorHtml_1: #41a6dc;
@@ -11,6 +11,7 @@
     --ColorHtml_3: #6984bd;
     --ColorHtml_4: #9bacd5;
     --ColorHtml_5: #37538f;
+	--ColorHtml_6: #4b4b4b;
 
     --MainFontSize: 1.8rem;
     --MainLineHeight: 1.5;
@@ -418,7 +419,8 @@
 	background-color: transparent;
     background-position: center;
     background-size: contain;
-    vertical-align: bottom;
+    vertical-align: middle;
+	margin-top: -7px;
 }
 
 /*Archivo adjunto*/
@@ -1046,6 +1048,7 @@ body:not(.edit) .bck-tabcontents .div-contents {
     --ColorHtml_3: #8960a2;
     --ColorHtml_4: #ceabe4;
     --ColorHtml_5: #582d72;	
+	--ColorHtml_6: #272727;
 }
 
 .coursetag_imaginarium_primary #actividad .content .header:before {
@@ -1077,6 +1080,7 @@ body:not(.edit) .bck-tabcontents .div-contents {
     --ColorHtml_3: #5482be;
     --ColorHtml_4: #6969aa;
     --ColorHtml_5: #404092;	
+	--ColorHtml_6: #272727;
 }
 
 

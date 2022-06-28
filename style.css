@@ -468,7 +468,7 @@
 
 
 /* TITULO DE LA SLIDE */
-:not(.edit) #actividad .content .header {
+.body_clase:not(.edit) #actividad .content .header {
 	position: relative;
 	border: none;
     width: calc(100% + var(--SlidePadding) * 2);
@@ -484,7 +484,7 @@
     border-bottom: 0;
     background: none;
 }
-:not(.edit) #actividad .content .header:before {
+.body_clase:not(.edit) #actividad .content .header:before {
 	content: "";
     background-image: url(images/icone-titulo-kinder.png);
     background-repeat: no-repeat;

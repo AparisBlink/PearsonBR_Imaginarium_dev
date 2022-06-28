@@ -988,6 +988,7 @@ body:not(.edit) .bck-tabcontents .div-contents {
 
 /*-----------------------------*/
 /*---- COURSETAGS ----*/
+/*coursetag_imaginarium_primary*/
 .coursetag_imaginarium_primary {
 	--ColorSlideTitle: #0E4194;
     --ColorHtml_1: #54b2e3;
@@ -997,6 +998,17 @@ body:not(.edit) .bck-tabcontents .div-contents {
     --ColorHtml_5: #582d72;	
 }
 
+.coursetag_imaginarium_primary #actividad .content .header:before {
+    background-image: url(images/icone-titulo-primary.png);
+}
+.coursetag_imaginarium_primary #actividad .player.audio,
+.coursetag_imaginarium_primary #actividad .player.video,
+.coursetag_imaginarium_primary #help-panel-content .player,
+.coursetag_imaginarium_primary #remote-alert-modal-rich .player {
+    background-image: url(images/icone-audio-primary.png);
+}
+
+/*coursetag_imaginarium_secondary*/
 .coursetag_imaginarium_secondary {
 	--ColorSlideTitle: #E85859;
     --ColorHtml_1: #e55e5d;

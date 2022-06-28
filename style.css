@@ -908,6 +908,7 @@ body:not(.edit) .bck-tabcontents .div-contents {
     line-height: 24px;
     padding-left: 30px;
 }
+/*
 #actividad .workspace.true-false .respuesta_ok {
     border-bottom: 0;
 }
@@ -918,6 +919,7 @@ body:not(.edit) .bck-tabcontents .div-contents {
     border-bottom: 0;
     color: var(--TextColor);
 }
+*/
 /*---------- Botonera ----------------*/
 #actividad .btn{
 	border-radius: 5px;

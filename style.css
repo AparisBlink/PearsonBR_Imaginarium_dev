@@ -983,7 +983,8 @@ body:not(.edit) .bck-tabcontents .div-contents {
 /*--------------------------------------*/
 /*Verdadero y falso y test*/
 /*Damos formatos a los checkbox*/
-.true-false .radio-option label.filter-label::before {
+.true-false .radio-option label.filter-label::before,
+.test .radio-option label.filter-label::before {
     content: "";
     background: none;
     display: inline-block;
@@ -993,12 +994,14 @@ body:not(.edit) .bck-tabcontents .div-contents {
     border-radius: 3px;
     line-height: 22px;
 }
-.true-false .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::before {
+.true-false .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::before,
+.test .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::before {
     position: absolute;
     border-color: var(--ColorHtml_3);
     background-color: var(--ColorHtml_3);
 }
-.true-false .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::after {
+.true-false .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::after,
+.test .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::after {
     position: absolute;
     content: "\f00c";
     font-family: "FontAwesome";
@@ -1008,6 +1011,25 @@ body:not(.edit) .bck-tabcontents .div-contents {
     left: 4px;
     top: 0px;
 }
+
+#actividad .workspace.test .respuesta_ok,
+#actividad .workspace.true-false .respuesta_ok {
+  border: 2px solid #74d320;
+}
+#actividad .workspace.test .respuesta_ko,
+#actividad .workspace.true-false .respuesta_ko {
+  border: 2px solid #ef0c24;
+  background-color: #FFD8DC;
+}
+
+#actividad .workspace.test .solucion,
+#actividad .workspace.true-false .solucion {
+	border: 2px solid #00BDFF;
+  background-color: #B6ECFF;
+}
+
+
+
 /*
 .true-false .radio-option input.filter-radio[type="radio"]:checked + label.respuesta_ok.filter-label::before {
     background-color: #74d320;
@@ -1044,34 +1066,6 @@ body:not(.edit) .bck-tabcontents .div-contents {
 /*Reducimos padding del botón para que no se descuadren mucho las listas*/
 .btnaudiorecorder.btn-primary {
     padding: 2px 10px;
-}
-/*Test*/
-/*Verdadero y falso y test*/
-/*Damos formatos a los checkbox*/
-.test .radio-option label.filter-label::before {
-    content: "";
-    background: none;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    border: 2px solid #D8D8D8;
-    border-radius: 3px;
-    line-height: 22px;
-}
-.test .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::before {
-    position: absolute;
-    border-color: var(--ColorHtml_3);
-    background-color: var(--ColorHtml_3);
-}
-.test .radio-option input.filter-radio[type="radio"]:checked + label.filter-label::after {
-    position: absolute;
-    content: "\f00c";
-    font-family: "FontAwesome";
-    color: #ffffff;
-    font-size: 15px;
-    background: none;
-    left: 4px;
-    top: 0px;
 }
 
 /*------*/

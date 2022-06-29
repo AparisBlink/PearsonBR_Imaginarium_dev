@@ -388,10 +388,12 @@
 }
 #actividad .content .header .title {
     margin-bottom: 0;
-	margin-left: 20px;
+	margin-left: calc(var(--SlidePadding) + 1.0rem);
+    display: flex;
+    align-items: center;
 }
 #actividad .content .header .title h3 {
-    font-size: 3.4rem;
+    font-size: calc(var(--MainFontSize) * 2);
     margin-top: 0px;
     font-weight: bold;
     display: block;
@@ -802,19 +804,8 @@ body:not(.edit) .bck-tabcontents .div-contents {
     align-items: center;
     line-height: 24px;
     padding-left: 30px;
+    padding-bottom: 3px;
 }
-/*
-#actividad .workspace.true-false .respuesta_ok {
-    border-bottom: 0;
-}
-#actividad .workspace.true-false .respuesta_ko {
-    border-bottom: 0;
-}
-#actividad .workspace.true-false .solucion {
-    border-bottom: 0;
-    color: var(--TextColor);
-}
-*/
 /*---------- Botonera ----------------*/
 #actividad .btn{
 	border-radius: 5px;
@@ -898,27 +889,7 @@ body:not(.edit) .bck-tabcontents .div-contents {
     left: 4px;
     top: 0px;
 }
-/*
-#actividad .workspace.test .respuesta_ok,
-#actividad .workspace.true-false .respuesta_ok {
-  border: 2px solid #74d320;
-}
-#actividad .workspace.test .respuesta_ko,
-#actividad .workspace.true-false .respuesta_ko {
-  border: 2px solid #ef0c24;
-  background-color: #FFD8DC;
-}
-
-#actividad .workspace.test .solucion,
-#actividad .workspace.true-false .solucion {
-	border: 2px solid #00BDFF;
-  background-color: #B6ECFF;
-}
-*/
-
-
 /*------------*/
-
 /*Marcar palabras*/
 #actividad .markwords-word {
     line-height: var(--MainLineHeight) !important;	
@@ -1063,9 +1034,15 @@ Las modifico*/
 		padding: inherit;
 	}
 }
+/*Queries propias*/
+@media screen and (max-width: 480px) {
+    :root {
+        --MainFontSize: 1.6rem;
+        --SlidePadding: 3.0rem;
+    }
+}
 
 /* TMPUX STYLES */
-
 .tmpux.modo_revision .PearsonBR_Imaginarium_dev-navbar, 
 .tmpux.modo-correccion .PearsonBR_Imaginarium_dev-navbar,
 .tmpux.modo-deber .PearsonBR_Imaginarium_dev-navbar{

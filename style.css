@@ -22,74 +22,347 @@
 }
 
 /*General */
-#actividad .carousel-inner .item-container {
-    background-image: none;
-    margin: 20px auto 30px;
-    padding: 0px;
-    padding-bottom: 90px;
-    position: relative;
-}
+	.body_clase:not(.edit) .content-wrapper {
+		padding-top: 100px;
+		padding-bottom: 0px;
+	}
+
+	.body_clase.edit .content-wrapper {
+		top: 0px;
+	}
+
+	.is_app{
+		padding-top: 0px;
+	}
+
+	.is_app:not(.offline-pc) .content-wrapper {
+		padding-top: 55px;
+	}
+
+	#actividad {
+		margin-bottom: 0px;
+		-webkit-transform: none;
+		-webkit-transform-style: flat;
+	}
+
+	.slide-wrapper,
+	.cke_contents {
+		text-align: justify;
+	}
+
+	#actividad .carousel-inner .item-container {
+		background-image: none;
+		margin: 20px auto 30px;
+		padding: 0px;
+		padding-bottom: 90px;
+		position: relative;
+	}
+
+	#actividad .content .header .title img,
+	#actividad .content .header .chapter {
+		display: none;
+	}
+
+	#indice .units ul li a .number,
+	#indice .unit-content .header .number
+	 {
+		visibility: hidden;
+	}
+
+	.slide_main input {
+		color: #555;
+		background-color: #fff;
+		background-image: none;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	}
+
+	.slide_main input:focus {
+		border-top-color: #3AC62A;
+		border-right-color: #3AC62A;
+		border-bottom-color: #3AC62A;
+		border-left-color: #3AC62A;
+		outline-width: 0px;
+		outline-style: none;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(133, 200, 57, 0.6);
+	}
+
+	.slide_main input[disabled],
+	.slide_main input[readonly],
+	fieldset[disabled] .slide_main input {
+		cursor: not-allowed;
+		background-color: #eee;
+		opacity: 1;
+	}
+
+	.slide_main input.respuesta_ok {
+		border-color: #57e900;
+		background: #D1F3BD;
+	}
+
+	.slide_main input.respuesta_ko {
+		border-color: #FF3626;
+		background: #FFA49D;
+	}
+
+	.slide_main input.solucion {
+		border-color: #00BDFF;
+		background: #B6ECFF;
+	}
+
+	table {
+		margin-bottom: 20px;
+	}
+
+	.zoom_flag_img {
+	    top: 20px;
+	}
 /**/
 
 /*-----------------------------*/
-/*---------- Modificaciones sobre navbar original de publisher ----------*/
+/*---------- NAVBAR ----------*/
 /*-----------------------------*/
-.navbar-content:before {
-    display: none;
-}
-.PearsonBR_Imaginarium_dev-navbar {
-    background-color: var(--ColorNavBar_1);
-}
-#top-navigator.show_left:before {
-    color: var(--ColorNavBar_2);
-    background: linear-gradient(to right, var(--ColorNavBar_1), transparent);
-}
-#top-navigator.show_right:after {
-    color: var(--ColorNavBar_2);
-    background: linear-gradient(to left, var(--ColorNavBar_1), transparent);
-}
-.PearsonBR_Imaginarium_dev-navbar .dropdown button,
-.PearsonBR_Imaginarium_dev-navbar li {
-    border-radius: 5px;
-    border: none;
-    background-color: white;
-    color: var(--ColorNavBar_2);
-    vertical-align: middle;
-    margin: 0px 5px;
-    text-indent: 0px;
-    line-height: 3.5rem;
-    font-size: 2.0rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-.slider-indicators li {
-    width: 35px;
-    height: 35px;
-    background-color: #FFF;
-    margin: 0px 5px;
-    text-align: center;
-}
-.slider-indicators li.active,
-.PearsonBR_Imaginarium_dev-navbar li:hover,
-.PearsonBR_Imaginarium_dev-navbar .dropdown button:hover {
-    background-color: var(--ColorNavBar_2);
-    color: #FFF;
-}
-.PearsonBR_Imaginarium_dev-navbar .dropdown li a {
-    color: var(--ColorNavBar_2);
-    font-weight: bold;
-}
-.PearsonBR_Imaginarium_dev-navbar .dropdown .caret {
-    border-color: var(--ColorNavBar_2) transparent transparent transparent;
-}
-.PearsonBR_Imaginarium_dev-navbar .dropdown:hover .caret {
-    border-color: #FFF transparent transparent transparent;
-}
+
+/* Navbar (Breadcums) */
+
+    /*---- Se puede eliminar la regla al integrar el código*/
+	.navbar-content:before {
+        display: none;
+	}
+    /*---*/
+
+	.PearsonBR_Imaginarium_dev-navbar {
+		position: fixed;
+		top: 44px;
+		background-color: var(--ColorNavBar_1);
+		width: 100%;
+		left: 0;
+		z-index: 100;
+	}
+
+	.is_app .PearsonBR_Imaginarium_dev-navbar {
+		position: sticky;
+		top: 0px;
+	}
+
+	#top-navigator {
+		height: 55px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	#top-navigator.show_left:before {
+		color: var(--ColorNavBar_2);
+        background: linear-gradient(to right, var(--ColorNavBar_1), transparent);
+    }
+
+    #top-navigator.show_right:after {
+    	color: var(--ColorNavBar_2);
+        background: linear-gradient(to left, var(--ColorNavBar_1), transparent);
+    }
+
+	#top-navigator .slider-indicators li {
+		text-indent: 0;
+	}
+
+	.PearsonBR_Imaginarium_dev-navbar .navbar-content {
+		max-width: 960px;
+		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+	}
+
+	.PearsonBR_Imaginarium_dev-navbar .slider-indicators {
+		padding: 3px 0px;
+		display: inline-block;
+		text-align: left;
+		position: absolute;
+		width: 5000px;
+		bottom: 0px;
+		left: 0px;
+		z-index: 0;
+	}
+
+	.edit .slider-indicators {
+		padding-top: 10px;
+	}
+
+	.PearsonBR_Imaginarium_dev-navbar .dropdown button,
+	.PearsonBR_Imaginarium_dev-navbar li {
+		border-radius: 5px;
+		border: none;
+		background-color: white;
+		color: var(--ColorNavBar_2);
+		vertical-align: middle;
+		margin: 0px 5px;
+		text-indent: 0px;
+		line-height: 3.5rem;
+		font-size: 2.0rem;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	.slider-indicators li {
+		width: 35px;
+		height: 35px;
+		background-color: #FFF;
+		margin: 0px 5px;
+		text-align: center;
+	}
+
+	.slider-indicators li.active,
+	.PearsonBR_Imaginarium_dev-navbar li:hover,
+	.PearsonBR_Imaginarium_dev-navbar .dropdown button:hover {
+		background-color: var(--ColorNavBar_2);
+		color: #FFF;
+	}
+
+	.PearsonBR_Imaginarium_dev-navbar .dropdown button {
+		width: auto;
+		padding: 0px 10px;
+	}
+
+	/*.slider-indicators li:first-of-type {
+		width: auto;
+		padding: 0px 10px;
+	}*/
+
+	.PearsonBR_Imaginarium_dev-navbar .dropdown {
+		display: block;
+		float: left;
+		margin-top: 10px;
+	}
+
+	.open > .dropdown-menu {
+		display: block;
+		max-height: 300px;
+		overflow-y: auto;
+	}
+    .dropdown-menu>li>a:hover,
+     .dropdown-menu>li>a:focus {
+        transition: none;
+    }
+
+	.PearsonBR_Imaginarium_dev-navbar .dropdown button {
+		border: none;
+	}
+
+	.PearsonBR_Imaginarium_dev-navbar .dropdown button:focus {
+		outline: none;
+	}
+
+	.PearsonBR_Imaginarium_dev-navbar .dropdown li {
+		display: list-item;
+		width: auto;
+	}
+
+	.PearsonBR_Imaginarium_dev-navbar .dropdown li a {
+		color: var(--ColorNavBar_2);
+		font-weight: bold;
+	}
+
+	.PearsonBR_Imaginarium_dev-navbar .dropdown .caret {
+		border-color: var(--ColorNavBar_2) transparent transparent transparent;
+	}
+
+	.PearsonBR_Imaginarium_dev-navbar .dropdown:hover .caret {
+		border-color: #FFF transparent transparent transparent;
+	}
+/**/
+
+/* Navigators */
+	.navigator {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		padding: 0px 97px;
+	}
+
+	.main-navigator {
+		padding: 15px 0px;
+		width: 100%;
+		border-top: 1px solid #e5e5e5;
+	}
+
+	.navigator .left, .navigator .right {
+		width: 49%;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.navigator .left {
+		padding-left: 20px;
+	}
+
+	.navigator .right {
+		text-align: right;
+		padding-right: 20px;
+	}
+
+	.navigator .title {
+		font-size: 1.6rem;
+		line-height: 4.0rem;
+		display: inline-block;
+		vertical-align: top;
+		width: calc(100% - 20px);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.navigator .slider-control.left,
+	.navigator .slider-control.right {
+		position: static;
+		height: auto;
+		width: 100%;
+		background-color: transparent;
+		border-radius: 0px;
+		margin: 0px;
+		opacity: 1;
+		text-shadow: none;
+		color: #999;
+		font-size: 2.3rem;
+	}
+
+	.navigator .slider-control.left:before,
+	.navigator .slider-control.right:after {
+		font-family: 'FontAwesome';
+		position: absolute;
+		margin-top: 9px;
+	}
+
+	.navigator .slider-control.left:before {
+		margin-left: -20px;
+		content: "\f104";
+	}
+
+	.navigator .slider-control.right:after {
+		margin-left: 20px;
+		content: "\f105";
+	}
+
+	.navigator .slider-control span {
+		position: static;
+		margin: 0px;
+        cursor: pointer;
+	}
+
+	.slider-indicators .active {
+		width: 35px;
+		height: 35px;
+	}
 /**/
 
 /*----------------------------------------------*/
 /*----------- GENERALES SLIDES HTML -------------*/
 /*----------------------------------------------*/
+
 /*General para que lean las variables*/
 #actividad .texto_curso {
     font-family: var(--MainFontFamily);
@@ -111,6 +384,19 @@
 #actividad .class_slide {
     padding: 0 var(--SlidePadding) 50px;
 }
+#actividad .class_slide:last-of-type {
+    padding-bottom: 100px;
+}
+#actividad .slide-concatenate .class_slide {
+    padding-bottom: 20px;
+}
+#actividad .slide-concatenate:last-of-type .class_slide {
+    padding-bottom: 100px;
+}
+#actividad .slide-concatenate:last-child .class_slide:last-of-type {
+    /*padding-bottom: 100px;*/
+}
+
 
 /* CKEDITOR */
 /*Enlaces*/
@@ -124,7 +410,7 @@
     color: var(--ColorHtml_1);
 }
 
-/* Icono insertar Audio*/
+/*Audio*/
 #actividad .player.audio,
  #actividad .player.video,
   #help-panel-content .player,
@@ -136,7 +422,8 @@
     vertical-align: middle;
 	margin-top: -7px;
 }
-/*Estilo Archivo adjunto*/
+
+/*Archivo adjunto*/
 .bck-file-attach img {
 	display: none;
 }
@@ -147,7 +434,6 @@
     display: block;
     margin-bottom: var(--MainMargin);
     max-width: 100%;
-    vertical-align: middle;
 }
 .bck-file-label,
  .bck-sub-label {
@@ -179,6 +465,7 @@
     background: none;
     margin-right: 5px;
 }
+
 
 /* TITULO DE LA SLIDE */
 .body_clase:not(.edit) #actividad .content .header {
@@ -310,6 +597,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .bck-box.center {
     margin: 0 auto;
     margin-bottom: var(--MainMargin);
+}
+.bck-box.left {
+    float: left;
+    margin-right: 25px;
+}
+.bck-box.right {
+    float: right;
+    margin-left: 25px;
 }
 .bck-box > .bck-title {
     font-size: calc(var(--MainFontSize) * 1.2);
@@ -561,7 +856,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	height: 3rem;
 }  
 
-/* Tooltip - palabra emergente*/
+/* Content: popover template*/
 #actividad .popover-container .popover-title:before {
         display: none;
 }    
@@ -583,12 +878,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .body_clase.edit .popover-title,
 .popover-template .popover-title {
-    color: (var(--ColorHtml_1));
-    font-size: var(--MainFontSize);
-    line-height: var(--MainLineHeight);
-    display: flex;
-    padding: 1.0rem 4.5rem 1.0rem 1.5rem;
+color: (var(--ColorHtml_1));
+font-size: var(--MainFontSize);
+line-height: var(--MainLineHeight);
+display: flex;
+padding: 1.0rem 4.5rem 1.0rem 1.5rem;
 }
+
+/*Archivos adjuntos*/
+.bck-file-attach span {
+    vertical-align: middle;
+}
+
 /*--TABS--*/
 body:not(.edit) .bck-tabs-box {
     background-color: transparent;
@@ -628,6 +929,18 @@ body:not(.edit) .bck-tabcontents .div-contents {
     line-height: 24px;
     padding-left: 30px;
 }
+/*
+#actividad .workspace.true-false .respuesta_ok {
+    border-bottom: 0;
+}
+#actividad .workspace.true-false .respuesta_ko {
+    border-bottom: 0;
+}
+#actividad .workspace.true-false .solucion {
+    border-bottom: 0;
+    color: var(--TextColor);
+}
+*/
 /*---------- Botonera ----------------*/
 #actividad .btn{
 	border-radius: 5px;
@@ -711,7 +1024,7 @@ body:not(.edit) .bck-tabcontents .div-contents {
     left: 4px;
     top: 0px;
 }
-/*
+
 #actividad .workspace.test .respuesta_ok,
 #actividad .workspace.true-false .respuesta_ok {
   border: 2px solid #74d320;
@@ -728,7 +1041,7 @@ body:not(.edit) .bck-tabcontents .div-contents {
   background-color: #B6ECFF;
 }
 
-*/
+
 
 /*
 .true-false .radio-option input.filter-radio[type="radio"]:checked + label.respuesta_ok.filter-label::before {
@@ -903,5 +1216,17 @@ Las modifico*/
 	}
 }
 
+/* TMPUX STYLES */
 
+.tmpux.modo_revision .PearsonBR_Imaginarium_dev-navbar, 
+.tmpux.modo-correccion .PearsonBR_Imaginarium_dev-navbar,
+.tmpux.modo-deber .PearsonBR_Imaginarium_dev-navbar{
+    top: 0px;
+}
+
+.tmpux.modo_revision #actividad .carousel-inner .item-container,
+.tmpux.modo-correccion #actividad .carousel-inner .item-container,
+.tmpux.modo-deber #actividad .carousel-inner .item-container {
+    margin: 86px auto 30px;
+}
 

@@ -388,7 +388,7 @@
 }
 #actividad .content .header .title {
     margin-bottom: 0;
-	margin-left: calc(var(--SlidePadding) + 1.0rem);
+	margin-left: 4rem;
     display: flex;
     align-items: center;
 }

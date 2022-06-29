@@ -368,6 +368,7 @@
 	display: none;
 }
 #actividad .content .header.empty {
+    background: none;
     border-bottom: 0;
     background: none;
 }

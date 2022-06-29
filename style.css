@@ -82,13 +82,13 @@
 	}
 
 	.slide_main input:focus {
-		border-top-color: var(--ColorHtml_3);
-		border-right-color: var(--ColorHtml_3);
-		border-bottom-color: var(--ColorHtml_3);
-		border-left-color: var(--ColorHtml_3);
+		border-top-color: #3AC62A;
+		border-right-color: #3AC62A;
+		border-bottom-color: #3AC62A;
+		border-left-color: #3AC62A;
 		outline-width: 0px;
 		outline-style: none;
-		box-shadow: none;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(133, 200, 57, 0.6);
 	}
 
 	.slide_main input[disabled],

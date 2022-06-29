@@ -1085,8 +1085,8 @@ body:not(.edit) .bck-tabcontents .div-contents {
 
 /*-----------------------------*/
 /*---- COURSETAGS ----*/
-/*coursetag_imaginarium_primary*/
-.coursetag_imaginarium_primary {
+/*coursetag_primaria*/
+.coursetag_primaria {
 	--ColorNavBar_1: #ab9bc4;
     --ColorNavBar_2: #8b62a5;
 
@@ -1099,27 +1099,27 @@ body:not(.edit) .bck-tabcontents .div-contents {
 	--ColorHtml_6: #272727;
 }
 
-.body_clase:not(.edit).coursetag_imaginarium_primary #actividad .content .header:before {
+.body_clase:not(.edit).coursetag_primaria #actividad .content .header:before {
     background-image: url(images/icone-titulo-primary.png);
 }
-.coursetag_imaginarium_primary #actividad .player.audio,
-.coursetag_imaginarium_primary #actividad .player.video,
-.coursetag_imaginarium_primary #help-panel-content .player,
-.coursetag_imaginarium_primary #remote-alert-modal-rich .player {
+.coursetag_primaria #actividad .player.audio,
+.coursetag_primaria #actividad .player.video,
+.coursetag_primaria #help-panel-content .player,
+.coursetag_primaria #remote-alert-modal-rich .player {
     background-image: url(images/icone-audio-primary.png);
 }
 
-.coursetag_imaginarium_primary .bck-title-6 {
+.coursetag_primaria .bck-title-6 {
     background-color: #008DD1;
 	border-radius: 10px;
 }
-.coursetag_imaginarium_primary .bck-title-6:before {
+.coursetag_primaria .bck-title-6:before {
 	background-image: url(images/titulo-especial-primary_icono.png);
 	background-size: 25px;
 }
 
-/*coursetag_imaginarium_secondary*/
-.coursetag_imaginarium_secondary {
+/*coursetag_secundaria*/
+.coursetag_secundaria {
 	--ColorNavBar_1: #bfd0e7;
     --ColorNavBar_2: #e85859;
 
@@ -1132,19 +1132,19 @@ body:not(.edit) .bck-tabcontents .div-contents {
 	--ColorHtml_6: #272727;
 }
 
-.body_clase:not(.edit).coursetag_imaginarium_secondary #actividad .content .header:before {
+.body_clase:not(.edit).coursetag_secundaria #actividad .content .header:before {
     background-image: url(images/icone-titulo-secundary.png);
 }
-.coursetag_imaginarium_secondary #actividad .player.audio,
-.coursetag_imaginarium_secondary #actividad .player.video,
-.coursetag_imaginarium_secondary #help-panel-content .player,
-.coursetag_imaginarium_secondary #remote-alert-modal-rich .player {
+.coursetag_secundaria #actividad .player.audio,
+.coursetag_secundaria #actividad .player.video,
+.coursetag_secundaria #help-panel-content .player,
+.coursetag_secundaria #remote-alert-modal-rich .player {
     background-image: url(images/icone-audio-secondary.png);
 }
-.coursetag_imaginarium_secondary .bck-title-6 {
+.coursetag_secundaria .bck-title-6 {
     background-color: #0088CC;
 }
-.coursetag_imaginarium_secondary .bck-title-6:before {
+.coursetag_secundaria .bck-title-6:before {
     background-image: url(images/titulo-especial-secondary-icone.png);
     left: 7px;
     background-size: 14px;
@@ -1152,50 +1152,50 @@ body:not(.edit) .bck-tabcontents .div-contents {
     top: 5px;
 }
 
-.coursetag_imaginarium_secondary .content .bck-ol li:before {
+.coursetag_secundaria .content .bck-ol li:before {
     color: var(--ColorHtml_1);
 }
-.coursetag_imaginarium_secondary #actividad .texto_curso ul li:before,
-.coursetag_imaginarium_secondary #actividad ul.bck-ul > li:before {
+.coursetag_secundaria #actividad .texto_curso ul li:before,
+.coursetag_secundaria #actividad ul.bck-ul > li:before {
     background: var(--ColorHtml_1);
     color: var(--ColorHtml_1);
 }
-.coursetag_imaginarium_secondary .bck-dropdown .bck-dropdown-titulo {
+.coursetag_secundaria .bck-dropdown .bck-dropdown-titulo {
     color: var(--ColorHtml_3);
 }
-.coursetag_imaginarium_secondary .bck-dropdown .bck-dropdown-button {
+.coursetag_secundaria .bck-dropdown .bck-dropdown-button {
     color: var(--ColorHtml_3);
 }
-.coursetag_imaginarium_secondary .bck-dropdown .bck-dropdown-icon>.fa {
+.coursetag_secundaria .bck-dropdown .bck-dropdown-icon>.fa {
     background-color: var(--ColorHtml_3);
 }
-.coursetag_imaginarium_secondary .bck-dropdown .bck-dropdown-content {
+.coursetag_secundaria .bck-dropdown .bck-dropdown-content {
     background-color: var(--ColorHtml_3);
 }
 
-.coursetag_imaginarium_secondary #actividad .bck-flipbox .bck-flipbox-face.front {
+.coursetag_secundaria #actividad .bck-flipbox .bck-flipbox-face.front {
     background-color: var(--ColorHtml_2);
 }
-.coursetag_imaginarium_secondary #actividad .bck-flipbox .bck-flipbox-face.back {
+.coursetag_secundaria #actividad .bck-flipbox .bck-flipbox-face.back {
     color: #ffffff;
     background-color: var(--ColorHtml_5);
 }
 
-.coursetag_imaginarium_secondary .bck-tabtitles {
+.coursetag_secundaria .bck-tabtitles {
     background-color: var(--ColorHtml_2);
     color: #ffffff;
     border-color: var(--ColorHtml_5);
 }
-.coursetag_imaginarium_secondary .bck-tabtitles.bck-tabs-active,
-.coursetag_imaginarium_secondary .bck-tabtitles:hover {
+.coursetag_secundaria .bck-tabtitles.bck-tabs-active,
+.coursetag_secundaria .bck-tabtitles:hover {
     background-color: var(--ColorHtml_5);
     color: #ffffff;
 }
-body:not(.edit).coursetag_imaginarium_secondary .bck-tabcontents .div-contents {
+body:not(.edit).coursetag_secundaria .bck-tabcontents .div-contents {
     border-color: var(--ColorHtml_5);
 }
 
-.coursetag_imaginarium_secondary #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) tbody .bck-td-1 {
+.coursetag_secundaria #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) tbody .bck-td-1 {
     background-color: var(--ColorHtml_5);
 	color: #ffffff;	
 }

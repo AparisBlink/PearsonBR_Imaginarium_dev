@@ -965,10 +965,12 @@ body:not(.edit) .bck-tabcontents .div-contents {
 }
 .coursetag_secundaria .bck-title-6:before {
     background-image: url(images/titulo-especial-secondary-icone.png);
-    left: 7px;
+    width: 30px;
+    left: 0px;
     background-size: 14px;
     height: 100%;
-    top: 5px;
+    top: 1px;
+    background-position: center;
 }
 
 .coursetag_secundaria .content .bck-ol li:before {

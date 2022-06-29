@@ -1201,50 +1201,19 @@ body:not(.edit).coursetag_secundaria .bck-tabcontents .div-contents {
 }
 
 
-
-
-
-@media screen and (max-width: 1099px) {
-    .body_clase .content-wrapper {
-        max-width: 100%;
-    }
-
-    #actividad .content {
-        border-radius: 0;
-    }
-
-    #actividad .carousel-inner .item-container {
-        margin: 0;
-        width: 100% !important;
-        max-width: none;
-        box-shadow: none;
-        margin-bottom: 20px;
-    }
-
-    .ipad #actividad .carousel-inner .item-container {
-  		border-right: 1px solid #eee;
-    }
-}
-
-
+/*Estas reglas vienen directamente del estilo Publisher
+Las modifico*/
 
 @media screen and (max-width: 768px) {
     #actividad .carousel-inner .class_slide {
-        padding: 40px 20px 0px;
+        padding: 0 var(--SlidePadding) 50px;
     }
-
-    .navigator {
-        padding: 0px 20px;
-    }
-
 }
 
 @media screen and (max-width: 480px) {
-
     #actividad .carousel-inner .item-container {
-		padding: 40px 20px 90px;
+		padding: inherit;
 	}
-
 }
 
 /* TMPUX STYLES */

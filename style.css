@@ -110,7 +110,10 @@
 /**/
 
 /*-----------------------------*/
-/*---------- NAVBAR ----------*/
+/*---------- NAVBAR 
+Muchas reglas son de Publisher modificadas y otras son las 
+de por defecto que he tenido que mantener para que no
+se rompiera el estilo----------*/
 /*-----------------------------*/
 
 /* Navbar (Breadcums) */
@@ -278,6 +281,10 @@
 #actividad .workspace {
     font-size: var(--MainFontSize);
     line-height: var(--MainLineHeight);
+}
+
+.slide-wrapper, .cke_contents {
+    text-align: revert; /* Esta declaración se puede eliminar en la integración si nos aseguramos de que el texto no esté justificado a la derecha*/
 }
 
 /* Padding de la slide */
